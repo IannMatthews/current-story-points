@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Current Story Points",
+    "description": "Current Story Points",
+    "version": "1.0.0",
+    "icons": {
+        "128": "/images/Logo_128_Bold.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://gowithflow.atlassian.net/jira/software/c/projects/EN/boards/*/backlog?*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
