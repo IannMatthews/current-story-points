@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="../images/Logo_128_Bold.png" alt="CSP Logo">
+            <h3>Current Story Points!</h3>
+        </div>
+        <form id="csp-form">
+            <label for="email">JIRA email address</label>
+            <input required type="email" name="email" id="email" placeholder="example@mail.com">
+            <label for="api-token">JIRA API token</label>
+            <input required type="password" name="api-token" id="api-token" placeholder="JIRA API token">
+            <label for="story-points">Story Points (Custom field ID)</label>
+            <input required type="text" name="story-points" id="story-points" placeholder="customfield_01234">
+            <label for="current-story-points">Current Story Points (Custom field ID)</label>
+            <input required type="text" name="story-points" id="current-story-points" placeholder="customfield_98765">
+            <button id="csp-submit">Okay</button>
+        </form>
+    </div>
+</body>
+</html>

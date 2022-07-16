@@ -6,12 +6,20 @@
     "icons": {
         "128": "/images/Logo_128_Bold.png"
     },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
     "content_scripts": [
         {
             "matches": [
                 "*://gowithflow.atlassian.net/jira/software/c/projects/EN/boards/*/backlog?*"
             ],
-            "js": ["content.js"]
+            "js": [
+                "content/content.js"
+            ]
         }
+    ],
+    "permissions": [
+        "storage"
     ]
 }

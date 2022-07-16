@@ -1,0 +1,48 @@
+html {
+    padding: 20px;
+    padding-top: 4px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+
+    font-weight: bolder;
+    font-size: large;
+
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 64px;
+    margin-right: 8px;
+}
+
+label {
+    font-weight: bold;
+    font-size: medium;
+}
+
+input {
+    border-radius: 8px;
+    min-height: 36px;
+    min-width: 300px;
+
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border: 1px solid rgb(192, 192, 192);
+}
+
+button {
+    height: 36px;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 16px;
+    border: none;
+}
