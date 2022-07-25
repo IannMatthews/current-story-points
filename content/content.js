@@ -8,7 +8,6 @@ chrome.storage.local.get(['csp-data'], function (result) {
 });
 
 function updateCsp(cspData) {
-    console.log(cspData);
     if (cspData) {
         const sprints = document.querySelectorAll('.ghx-meta');
 
@@ -79,7 +78,7 @@ function updateCsp(cspData) {
             });
 
             issueKeys.forEach((issueId) => {
-                fetch(`https://gowithflow.atlassian.net/rest/api/3/issue/${issueId}`, {
+                fetch(`https://${cspData.subdomain}.atlassian.net/rest/api/3/issue/${issueId}`, {
                     method: 'GET',
                     headers,
                 })

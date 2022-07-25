@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="popup.css">
     <script src="popup.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="banner">
@@ -13,6 +15,8 @@
             <h3>Current Story Points!</h3>
         </div>
         <form id="csp-form">
+            <label for="subdomain">JIRA subdomain</label>
+            <input required type="subdomain" name="subdomain" id="subdomain" placeholder="subdomain">
             <label for="email">JIRA email address</label>
             <input required type="email" name="email" id="email" placeholder="example@mail.com">
             <label for="api-token">JIRA API token</label>
@@ -25,4 +29,5 @@
         </form>
     </div>
 </body>
+
 </html>
